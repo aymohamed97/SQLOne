@@ -6,7 +6,7 @@ SELECT MAX(total) FROM invoice;
 SELECT MIN(total) FROM invoice;
 -- Find all orders bigger than $5.
 SELECT * FROM invoice WHERE total > 5;
--- Count how many orders were smaller than $5.
+-- Count how many orders were smaller than $5
 SELECT COUNT(*) FROM invoice WHERE total < 5;
 -- Count how many orders were in CA, TX, or AZ (use IN).
 SELECT COUNT(*) FROM invoice WHERE billing_state in ('CA', 'TX', 'AZ');
